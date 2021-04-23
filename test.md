@@ -1,0 +1,5 @@
+```uml
+@startuml
+:あああ;
+@stop
+```
