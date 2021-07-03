@@ -1,5 +1,7 @@
 ```uml
-@startuml :ログイン
+@startuml 
+
+#ログイン
 
 
  opt 未登録
