@@ -1,12 +1,12 @@
 ```uml
 @startuml
 skinparam activity {
-  BackgroundColor<<big>> red
+  StartColor<<big>> red
 }
 
-[*] --> メニューバー
+(*) --> メニューバー
 state メニューバー {
- [*] --> 商品一覧ページ <<big>> 
+ (*)<<big>> --> 商品一覧ページ  
 }
 
 
