@@ -1,9 +1,6 @@
 ```uml 
 @startuml 
 
-header メイン処理
-end header
-
  opt 未登録
 
   ユーザー -> Webサーバー:ユーザー登録
