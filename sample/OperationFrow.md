@@ -1,6 +1,6 @@
 ```uml 
 @startuml 
-center header <b>メイン処理</b>
+center header --メイン処理--
 
  opt 未登録
 
