@@ -1,7 +1,7 @@
 ```uml
-@startuml
+@startuml ログイン
 
-alt ログイン
+
  opt 未登録
 
   ユーザー -> Webサーバー:ユーザー登録
