@@ -12,8 +12,8 @@ state メニューバー {
  登録情報 --> [*]
 }
 メニューバー --> backpoint
-backpoints --> メニューバー
-backpoints --> [*]
+backpoint --> メニューバー
+backpoint --> [*]
 
 @enduml
 ```
