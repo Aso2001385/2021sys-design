@@ -23,6 +23,9 @@ loop 購入するまで
  end
  
  opt 購入
+  opt 未ログイン
+    hnote across: ログイン処理
+  end
   ユーザー -> Webサーバー:購入
   Webサーバー -> DBサーバー:カート情報(購入申請)
   DBサーバー -> DBサーバー:購入処理
