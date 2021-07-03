@@ -11,7 +11,7 @@ state メニューバー {
  カートの中 --> [*]
  ||
  登録情報 --> [*]
- hnote across: ログイン処理
+
 }
 メニューバー --> backpoint
 backpoint --> メニューバー
