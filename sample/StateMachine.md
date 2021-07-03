@@ -11,7 +11,7 @@ state メニューバー {
  ||
  登録情報 --> [*]
 }
-メニューバー --> backpoints
+メニューバー --> backpoint
 backpoints --> メニューバー
 backpoints --> [*]
 
