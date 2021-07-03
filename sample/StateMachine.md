@@ -11,7 +11,7 @@ state メニューバー {
  [*] --> 登録情報ページ
 
 }
-メニューバー --> endpoint
+メニューバー --> endpoints
 endpoint --> メニューバー
 endpoint --> [*]
 
