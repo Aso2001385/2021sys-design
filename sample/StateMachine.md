@@ -6,14 +6,14 @@ state メニューバー {
  [*] --> 商品一覧ページ
  ||
  [*] --> カートの中 
- カートの中 --> endpoints
+ カートの中 --> backpoint
  ||
  [*] --> 登録情報ページ
 
 }
-メニューバー --> endpoint
-endpoint --> メニューバー
-endpoint --> [*]
+メニューバー --> backpoints
+backpoints --> メニューバー
+backpoints --> [*]
 
 
 
