@@ -3,9 +3,7 @@
 
 [*] --> メニューバー
 state メニューバー {
- state login <<inputPin>>
- 
- login --> 商品一覧ページ
+ state あ --> 商品一覧ページ
  ||
  [*] --> カートの中 
  ||
