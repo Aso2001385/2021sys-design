@@ -10,7 +10,7 @@ state メニューバー {
  カートの中 --> backpoint2
  ||
  [*] --> 登録情報ページ
- 登録情報ページbackpoint3
+ 登録情報ページ --> backpoint3
 }
 メニューバー --> backpoints
 backpoints --> メニューバー
