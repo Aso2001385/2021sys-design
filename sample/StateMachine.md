@@ -1,14 +1,15 @@
 ```uml
 @startuml
 
-[*] --> メニューバー
+[*] --> 商品一覧
+商品一覧 --> メニューバー
 state メニューバー {
- [*] --> 商品一覧ページ
- 商品一覧ページ --> backpoint1
+ [*] --> 商品一覧
+ 商品一覧 --> backpoint1
  ||
- カートの中 ---> backpoint2
+ カートの中 --> backpoint2
  ||
- 登録情報ページ ---> backpoint3
+ 登録情報 --> backpoint3
 }
 メニューバー --> backpoints
 backpoints --> メニューバー
