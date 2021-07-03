@@ -3,7 +3,7 @@
 
 [*] --> メニューバー
 state メニューバー {
-  BackgroundColr #Blue[*] --> 商品一覧ページ
+  <backgroundcolor="bule">[*]</backgroundcolor> --> 商品一覧ページ
 }
 
 
