@@ -1,5 +1,5 @@
 ```uml
-@stateuml
+@startuml
 
 [*] --> メニューバー
 state メニューバー {
