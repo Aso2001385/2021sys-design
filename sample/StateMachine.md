@@ -1,9 +1,10 @@
 ```uml
 @startuml
 
-[*]<<big>> --> メニューバー
+[*] --> メニューバー
 state メニューバー {
  [*] --> 商品一覧ページ
+ カートの中 --> backpoint
  ||
  [*] --> カートの中 
  カートの中 --> backpoint
@@ -14,10 +15,6 @@ state メニューバー {
 メニューバー --> backpoints
 backpoints --> メニューバー
 backpoints --> [*]
-
-
-
-
 
 @enduml
 ```
