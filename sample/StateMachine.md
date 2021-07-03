@@ -1,7 +1,7 @@
 ```uml
 @startuml
 skinparam activity {
-  StartColor <<big>> red
+  StartColor red
 }
 
 [*] --> メニューバー
