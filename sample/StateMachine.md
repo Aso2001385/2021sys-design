@@ -5,7 +5,7 @@
  トップページ: 商品一覧
  トップページ --> メニューバー
  state メニューバー {
-   メニューバー:        ID/PASS入力でログイン
+   メニューバー: ID/PASS入力でログイン,各ボタンクリックで遷移およびアクション
    商品一覧 --> [*]
    ||
    カートの中 --> [*]
@@ -16,6 +16,15 @@
  メニューバー --> backpoint
  backpoint --> メニューバー
  backpoint --> [*]
+
+@enduml
+```
+
+```uml
+@startuml
+ center header <size:20><b>商品一覧</b></size>
+ 
+ [*] --> 
 
 @enduml
 ```
