@@ -1,7 +1,7 @@
 ```uml 
 @startuml 
 
-headar メイン処理
+header メイン処理
 
  opt 未登録
 
