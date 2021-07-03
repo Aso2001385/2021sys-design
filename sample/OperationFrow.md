@@ -4,7 +4,7 @@ center header <size:20><b>メイン処理</b></size>
 
 
 alt ログイン
- == ログイン処理 ==
+ hnote across: ログイン処理
 end
 ユーザー -> Webサーバー:カート投入
 
