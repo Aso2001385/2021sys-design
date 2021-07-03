@@ -4,9 +4,9 @@ skinparam activity {
   StartColor<<big>> red
 }
 
-(*) --> メニューバー
+[*] --> メニューバー
 state メニューバー {
- (*)<<big>> --> 商品一覧ページ  
+ [*] <<big>> --> 商品一覧ページ  
 }
 
 
