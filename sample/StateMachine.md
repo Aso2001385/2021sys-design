@@ -10,5 +10,5 @@ state メニューバー {
 
 
 
-@end
+@enduml
 ```
