@@ -12,7 +12,8 @@ state メニューバー {
 
 }
 メニューバー --> endpoint
-endpoint --> [*] <<big>>
+endpoint --> メニューバー
+endpoint --> [*]
 
 
 
