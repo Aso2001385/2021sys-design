@@ -11,6 +11,7 @@ state メニューバー {
  ||
  登録情報 --> [*]
 }
+メニューバー --> ログイン
 メニューバー --> backpoint
 backpoint --> メニューバー
 backpoint --> [*]
