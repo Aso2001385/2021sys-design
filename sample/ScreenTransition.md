@@ -1,5 +1,5 @@
 <style>
-  table{
+  table, th, td{
     font-size: 50%;
   }
 </style>
