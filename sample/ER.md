@@ -1,6 +1,6 @@
 ```uml
 @startuml
-!define Color_Metal #F2F2F2-D9D9D9
+!define Color_Metal #F2F2F2
 !define Color_T #3399FF
 
 skinparam class {
