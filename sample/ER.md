@@ -41,7 +41,7 @@ package "ECサイト" as target_system{
     reg_date
   }
 
-  entity "カテゴリマスタ" as category <<M,Color_M>> {
+  entity "カテゴリマスタ" as category <<M,Color_M;text:Snow>> {
     + category_id [PK]
     --
     name 
