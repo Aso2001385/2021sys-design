@@ -1,10 +1,9 @@
 ```uml
 @startuml
-!define Color_Metal #F2F2F2
 !define Color_T #3399FF
 
 skinparam class {
-  BackgroundColor Color_Metal
+  BackgroundColor #F2F2F2-D9D9D9
   BorderColor Black
   ArrowColor Black
 }
