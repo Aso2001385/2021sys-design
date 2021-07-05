@@ -9,7 +9,7 @@ skinparam class {
   ArrowColor Black
 }
 
-entity"購入テーブル" as purchase <<T,Color_T>> {
+entity "購入テーブル" as purchase <<T,Color_T>> {
   + order_id [PK][NN]
   --
   order_id:bigint(20)[NN]
