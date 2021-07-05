@@ -46,7 +46,7 @@ entity "カテゴリマスタ" as category <<M,Color_M>> {
   reg_date [N]
 }
 
-entity "商品マスタ" as items　<<M,Color_M>> {
+entity "商品マスタ" as items <<M,Color_M>> {
   + item_code [PK][NN]
   --
   item_name [NN]
@@ -57,6 +57,8 @@ entity "商品マスタ" as items　<<M,Color_M>> {
   del_flag
   reg_date [NN]
 }
+
+purchase ----- purchase_detail
 
 
 @enduml
