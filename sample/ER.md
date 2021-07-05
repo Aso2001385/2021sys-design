@@ -1,6 +1,6 @@
 ```uml
 @startuml
-!define Color_T #3399FF-#000000
+!define Color_T #3399FF
 
 skinparam class {
   BackgroundColor DarkGrey-Snow
