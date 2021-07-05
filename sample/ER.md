@@ -58,7 +58,7 @@ entity "商品マスタ" as items <<M,Color_M>> {
   reg_date [NN]
 }
 
-purchase ----- purchase_detail
+purchase ||-|{ purchase_detail
 items }o-|| category
 
 @enduml
