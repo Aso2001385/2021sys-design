@@ -3,7 +3,7 @@
 !define Color_T #3399FF
 
 skinparam class {
-  BackgroundColor #F2F2F2-D9D9D9
+  BackgroundColor #f2f2f2-d9d9d9
   BorderColor Black
   ArrowColor Black
 }
