@@ -35,7 +35,26 @@ entity "顧客マスタ" as customers <<M,Color_M>> {
   address [NN]
   tel [NN]
   mail [NN]
-  del_flag [NN]
+  del_flag 
+  reg_date [NN]
+}
+
+entity "カテゴリマスタ" as category <<M,Color_M>> {
+  + category_id [PK][NN]
+  --
+  name [NN]
+  reg_date [N]
+}
+
+entity "商品マスタ" as items　<<M,Color_M>> {
+  + item_code [PK][NN]
+  --
+  item_name [NN]
+  price [NN]
+  category_id [NN][FK]
+  image [NN]
+  detail
+  del_flag
   reg_date [NN]
 }
 
