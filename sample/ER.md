@@ -12,9 +12,9 @@ entity "購入テーブル" as purchase <<T,Color_T>> {
   + order_id [PK][NN]
   --
   order_id [NN]
-  customer_code:varchar(50)[NN]
-  purchase_date:date[NN]
-  total_price:int(11)[NN]
+  customer_code [NN]
+  purchase_date [NN]
+  total_price [NN]
 }
 
 
