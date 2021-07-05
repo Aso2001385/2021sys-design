@@ -61,6 +61,7 @@ entity "商品マスタ" as items <<M,Color_M>> {
 purchase ||-|{ purchase_detail
 items }o-|| category
 customers |o-o{ purchase
+purchase_detail }--|| items
 
 @enduml
 ```
