@@ -1,6 +1,6 @@
 ```uml
 @startuml
-!define Color_T Lime;text: Snow
+!define Color_T Lime,text: Snow
 !define Color_M DarkViolet
 
 skinparam class {
