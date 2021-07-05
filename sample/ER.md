@@ -7,7 +7,7 @@ skinparam class {
   BackgroundColor DarkGrey-Snow
   BorderColor Black
   ArrowColor Black
-  FontColor Snow
+  IconFontColor Snow
 }
 
 package "ECサイト" as target_system{
