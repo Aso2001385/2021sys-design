@@ -9,7 +9,7 @@ skinparam class {
   ArrowColor Black
 }
 
-package "ECサイト" as target_system {
+package "ECサイト" as target_system <<Color_T>> {
 
   entity "購入テーブル" as purchase <<T,Color_T>> {
     + order_id [PK]
