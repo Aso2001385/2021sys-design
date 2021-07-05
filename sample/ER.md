@@ -11,52 +11,52 @@ skinparam class {
 
 
   entity "購入テーブル" as purchase <<T,Color_T>> {
-    + order_id [PK][NN]
+    + order_id [PK]
     --
-    order_id [NN]
-    customer_code [NN]
-    purchase_date [NN]
-    total_price [NN]
+    order_id
+    customer_code
+    purchase_date 
+    total_price 
   }
 
   entity "購入詳細テーブル" as purchase_detail <<T,Color_T>> {
-    + order_id [PK][NN][FK]
-    + detail_id [PK][NN]
+    + order_id [PK][FK]
+    + detail_id [PK]
     --
-    item_code [NN]
-    price [NN]
-    num [NN]
+    item_code
+    price
+    num
   }
 
   entity "顧客マスタ" as customers <<M,Color_M>> {
-    + customer_code [PK][NN]
+    + customer_code [PK]
     --
-    pass [NN]
-    name [NN]
-    address [NN]
-    tel [NN]
-    mail [NN]
+    pass
+    name
+    address
+    tel
+    mail
     del_flag 
-    reg_date [NN]
+    reg_date
   }
 
   entity "カテゴリマスタ" as category <<M,Color_M>> {
-    + category_id [PK][NN]
+    + category_id [PK]
     --
-    name [NN]
-    reg_date [N]
+    name 
+    reg_date 
   }
 
   entity "商品マスタ" as items <<M,Color_M>> {
-    + item_code [PK][NN]
+    + item_code [PK]
     --
-    item_name [NN]
-    price [NN]
-    category_id [NN][FK]
-    image [NN]
+    item_name
+    price
+    category_id [FK]
+    image
     detail
     del_flag
-    reg_date [NN]
+    reg_date
   }
 
   customers |o-r-o{ purchase
