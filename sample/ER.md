@@ -20,7 +20,7 @@ package "ECサイト" as target_system{
     total_price 
   }
 
-  entity "購入詳細テーブル" as purchase_detail <<T,Color_T,Snow>> {
+  entity "購入詳細テーブル" as purchase_detail <<T,Color_T>> <<Snow>> {
     + order_id [PK][FK]
     + detail_id [PK]
     --
