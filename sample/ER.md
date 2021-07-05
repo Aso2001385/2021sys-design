@@ -9,6 +9,7 @@ skinparam class {
   ArrowColor Black
 }
 
+package "ECサイト" as target_system {
 
   entity "購入テーブル" as purchase <<T,Color_T>> {
     + order_id [PK]
@@ -58,13 +59,15 @@ skinparam class {
     del_flag
     reg_date
   }
+  
+}
 
   customers |o-r-o{ purchase
   purchase ||-r-|{ purchase_detail
   purchase_detail }-d-|| items
   items }o-l-|| category
   
-  
+
 
 @enduml
 ```
