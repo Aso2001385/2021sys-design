@@ -1,6 +1,6 @@
 ```uml
 @startuml
-!define Color_T Lime,text: Snow
+!define Color_T Lime
 !define Color_M DarkViolet
 
 skinparam class {
@@ -12,7 +12,7 @@ skinparam class {
 
 package "ECサイト" as target_system{
 
-  entity "購入テーブル" as purchase <<T,Color_T>> {
+  entity "購入テーブル" as purchase <<T Snow,Color_T>> {
     + order_id [PK]
     --
     order_id
