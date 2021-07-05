@@ -28,7 +28,7 @@ entity "購入詳細テーブル" as purchase_detail <<T,Color_T>> {
 }
 
 entity "顧客マスタ" as customers <<M,Color_M>> {
-  + item_code [PK][NN]
+  + customer_code [PK][NN]
   --
   pass [NN]
   name [NN]
