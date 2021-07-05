@@ -7,6 +7,7 @@ skinparam class {
   BackgroundColor DarkGrey-Snow
   BorderColor Black
   ArrowColor Black
+  FontColor Snow
 }
 
 package "ECサイト" as target_system{
@@ -20,7 +21,7 @@ package "ECサイト" as target_system{
     total_price 
   }
 
-  entity "購入詳細テーブル" as purchase_detail <<T,Color_T>> <<Snow>> {
+  entity "購入詳細テーブル" as purchase_detail <<T,Color_T>> {
     + order_id [PK][FK]
     + detail_id [PK]
     --
@@ -41,7 +42,7 @@ package "ECサイト" as target_system{
     reg_date
   }
 
-  entity "カテゴリマスタ" as category <<M,Color_M;text:Snow>> {
+  entity "カテゴリマスタ" as category <<M,Color_M;>> {
     + category_id [PK]
     --
     name 
