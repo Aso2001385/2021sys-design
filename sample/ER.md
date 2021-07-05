@@ -59,10 +59,10 @@ skinparam class {
     reg_date [NN]
   }
 
-  customers |or-o{ purchase
-  purchase ||r-|{ purchase_detail
+  customers |o-r-o{ purchase
+  purchase ||-r-|{ purchase_detail
   purchase_detail }-d-|| items
-  items }ol-|| category
+  items }o-l-|| category
   
   
 
