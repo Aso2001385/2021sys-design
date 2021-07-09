@@ -10,7 +10,7 @@
 |購入日付|purchase_date|date||〇||
 |合計金額|total_price|int(11)||〇||
 
-###purchase_detail
+### purchase_detail
 |和名|属性名|型|PK|NN|FK|
 |:---|:---|:---|:---:|:---:|:---:|
 |オーダー番号|order_id|bigint(20)|〇|〇|〇|
@@ -19,7 +19,7 @@
 |商品価格|price|int(11)||〇||
 |数量|num|int(11)||〇||
 
-###customers
+### customers
 |和名|属性名|型|PK|NN|FK|
 |:---|:---|:---|:---:|:---:|:---:|
 |顧客コード|customer_code|varchar(50)|〇|〇||
@@ -31,14 +31,14 @@
 |削除フラグ|del_flag|int(11)||||
 |登録日|reg_date|date||〇||
 
-###category
+### category
 |和名|属性名|型|PK|NN|FK|
 |:---|:---|:---|:---:|:---:|:---:|
 |カテゴリid|category_id|int(11)|〇|〇||
 |カテゴリ名|name|varchar(20)||〇||
 |登録日|reg_date|date||〇||
 
-###items
+### items
 |和名|属性名|型|PK|NN|FK|
 |:---|:---|:---|:---:|:---:|:---:|
 |商品コード|item_code|int(11)|〇|〇||
