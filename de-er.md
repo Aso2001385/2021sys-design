@@ -17,6 +17,22 @@
         --
         student_name
     }
+    
+     entity "取得資格テーブル" as aquisition_license <<T,Color_T>>{
+        + student_numbar [PK][FK]
+        + license_code [PK][FK]
+        --
+        acquisition_date
+    }
+
+    entity "資格テーブル" as license <<M,Color_M>>{
+        + license_code [PK]
+        --
+        license_name
+    }
+
+  }
+  
 
    
   
