@@ -25,14 +25,16 @@
         acquisition_date
     }
 
-    entity "資格テーブル" as license <<T,Color_T>>{
+    entity "資格テーブル" as license <<M,Color_M>>{
         + license_code [PK]
         --
         license_name
     }
 
   }
-  students |--r-o{ aquisition_license 
-    aquisition_license }o-r--| license
+  
+  students ----- aquisition_license 
+  aquisition_license ----- license
+  
 @enduml
 ```
