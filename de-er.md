@@ -29,8 +29,8 @@
       license_name
   }
   
-  students |---o{ aquisition_license 
-  aquisition_license }o---| license
+  students |-r-o{ aquisition_license 
+  aquisition_license }or--| license
 
 @enduml
 ```
