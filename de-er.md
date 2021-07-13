@@ -23,7 +23,7 @@
       acquisition_date
   }
   
-  entity "資格テーブル" as license <<T,Color>>{
+  entity "資格テーブル" as license <<T,Color_T>>{
       + license_code [PK]
       --
       license_name
