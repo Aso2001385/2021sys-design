@@ -33,8 +33,8 @@
 
   }
   
-  sts ------ qus 
-  qus ------ ces
+  sts |-ro{ qus 
+  qus }or-| ces
 
 
    
