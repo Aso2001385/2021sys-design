@@ -33,8 +33,8 @@
 
   }
   
-  sts |o-r-o{ qus 
-  qus |o-r-o{ ces
+  sts ||-r-o{ qus 
+  qus }o-r-|| ces
 
 
    
