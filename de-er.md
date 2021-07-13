@@ -12,27 +12,30 @@
   
   package "資格一覧" as target_system{
 
-    entity "学生テーブル" as students <<T,Color_T>> {
-        + student_number [PK]
+    entity "学生テーブル" as sts <<T,Color_T>> {
+        + sts_code [PK]
         --
-        student_name
+        sts_name
     }
     
-     entity "取得資格テーブル" as aquisition_license <<T,Color_T>>{
-        + student_numbar [PK][FK]
-        + license_code [PK][FK]
+     entity "取得資格テーブル" as ces <<T,Color_T>>{
+        + sts_code [PK][FK]
+        + qus_code [PK][FK]
         --
-        acquisition_date
+        ces_date
     }
 
-    entity "資格テーブル" as license <<M,Color_M>>{
-        + license_code [PK]
+    entity "資格テーブル" as qus <<M,Color_M>>{
+        + qus_code [PK]
         --
-        license_name
+        qus_name
     }
 
   }
   
+  sts ------ qus 
+  qus ------ ces
+
 
    
   
