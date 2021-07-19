@@ -1,3 +1,46 @@
+```uml 
+@startuml 
+ center header <size:20><b>メイン処理</b></size>
+
+ opt ログイン
+  hnote across: ログイン処理
+ end
+
+ loop 購入処理成功まで
+  loop 商品を見つけるまで
+   hnote across: 商品サーチ処理
+  end
+
+  opt カート投入
+   ユーザー -> Webサーバー:商品投入(更新申請)
+   Webサーバー -> Webサーバー:カート内情報更新処理
+   Webサーバー ->ユーザー:カート内情報更新
+  end
+  opt キャンセル
+   ユーザー -> Webサーバー:カート内商品削除(更新申請)
+   Webサーバー -> Webサーバー:カート内情報更新処理
+   Webサーバー ->ユーザー:カート内情報更新
+  end
+
+  opt 購入
+   opt 未ログイン
+     hnote across: ログイン処理
+   end
+   ユーザー -> Webサーバー:購入
+   Webサーバー -> DBサーバー:カート情報(購入申請)
+   DBサーバー -> DBサーバー:購入処理
+   DBサーバー -> Webサーバー:購入処理結果
+   Webサーバー ->ユーザー:購入メッセージの表示
+  end
+
+ end
+
+ opt ログアウト
+  hnote across: ログアウト処理
+ end
+@enduml
+```
+
 ```uml
 @startuml
  center header <size:20><b>ログイン処理</b></size>
