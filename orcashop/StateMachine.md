@@ -1,5 +1,16 @@
 ```uml
 @startuml
+
+[*] -> メインページ: 最初の画面
+
+
+@enduml
+```
+
+
+
+```uml
+@startuml
  center header <size:20><b>メイン</b></size>
  [*] --> メニューバー
  state メニューバー {
