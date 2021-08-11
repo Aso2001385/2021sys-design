@@ -1,5 +1,4 @@
 # DB定義書
-[ER図]( https://github.com/Aso2001385/2021sys-design/blob/main/sample/ER.md )
 
 ### ジャンルマスタ
 genre
@@ -12,14 +11,15 @@ genre
 type
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
-|タイプ番号|type_id|int|〇|〇|||
-|タイプ名|type_name|varchar(15)||〇|||
 |ジャンル番号|genre_id|int|〇|〇|||
-
+|タイプ番号|type_id|int|〇|〇|||
+|タイプ名|type_name|varchar(15)|||〇||
+|特徴|type_text|text||〇||*などで区切る|
 
 ## 特徴マスタ
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
-|タイプ番号|type_id|int(20)|〇|〇|||
-|特徴番号|type_name|varchar(15)|〇|〇|||
+|タイプ番号|id|int(20)|〇|〇|||
+|特徴番号|id|varchar(15)|〇|〇|||
+
 
