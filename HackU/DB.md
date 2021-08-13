@@ -23,19 +23,19 @@ user
 |ユーザーID|user_id|int|〇|〇||auto_inc|
 |氏名|user_name|varchar(30)||〇|||
 |メール|user_mail|varchar(30)||〇|||
-|作成日時|user_created|timestamp||〇|||
-|更新日時|user_update|timestamp||〇|||
-|削除日|user_delete|timestamp|||||
+|作成日時|user_created|date||〇|||
+|更新日時|user_update|date||〇|||
+|削除日|user_delete|date|||||
 
 ## ログインテーブル
 login
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
-|ログインID|login_id|varchar(30)||〇||ユニーク、デフォはメアド|
-|ユーザーID|user_id|int||〇|〇|userから|
+|ログインID|login_id|varchar(30)|〇|〇||ユニーク、デフォはメアド|
+|ユーザーID|user_id|int||〇|〇|userテーブルから|
 |パスワード|login_pass|varchar(30)||〇|||
-|作成日時|login_created|timestamp||〇|||
-|更新日時|login_update|timestamp||〇||| 
+|作成日時|login_created|date||〇|||
+|更新日時|login_update|date||〇||| 
 
 ## 履歴テーブル
 history
