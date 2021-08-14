@@ -14,7 +14,7 @@ type
 |ジャンルID|genre_id|int|〇|〇|〇||
 |タイプID|type_id|int|〇|〇|||
 |タイプ名|type_name|varchar(15)||〇|||
-|特徴|type_feature|text||〇||*などで区切る|
+|特徴|type_feature|text||〇||\*などで区切る|
 
 ## ユーザーテーブル
 user
@@ -42,8 +42,9 @@ history
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
 |ユーザー番号|user_id|int|〇|〇|〇||
-|作成日時|histry_created|timestamp|〇|〇|||
-|ジャンル番号|genre_id||〇|||
-|タイプ番号|type_id|int||〇|||
-|特徴|history_feature|||||
-|結果|history_result|||||
+|作成日時|histry_created|date|〇|〇|||
+|タイプ名|type_name|int||〇||あえてこちらにも保存する|
+|テーマ名|theme_name|varchar(25)||〇|||
+|特徴|history_feature|text||||\*などで区切る|
+|テーマワード|history_feature|text||||\*などで区切る|
+|結果|history_result|varchar(30)||||
