@@ -41,10 +41,10 @@ login
 history
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
-|ユーザー番号|user_id|int|〇|〇|〇||
-|作成日時|histry_created|date|〇|〇|||
-|タイプ名|type_name|int||〇||あえてこちらにも保存する|
-|テーマ名|theme_name|varchar(25)||〇|||
+|ユーザーID|history_user_id|int|〇|〇|〇||
+|作成日時|history_created|date|〇|〇|||
+|タイプ名|history_type_name|int||〇||こちらにも保存する|
+|テーマ名|history_theme|varchar(25)||〇|||
 |特徴|history_feature|text||||\*などで区切る|
-|テーマワード|history_feature|text||||\*などで区切る|
+|テーマワード|history_idea|text||||\*などで区切る|
 |結果|history_result|varchar(30)||||
