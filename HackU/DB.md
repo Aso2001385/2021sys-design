@@ -11,7 +11,7 @@ genre
 type
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
-|ジャンルID|genre_id|int|〇|〇|〇||
+|ジャンルID|type_genre_id|int|〇|〇|〇||
 |タイプID|type_id|int|〇|〇|||
 |タイプ名|type_name|varchar(15)||〇|||
 |特徴|type_feature|text||〇||\*などで区切る|
@@ -32,7 +32,7 @@ login
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
 |ログインID|login_id|varchar(30)|〇|〇||ユニーク、デフォはメアド|
-|ユーザーID|user_id|int||〇|〇|userテーブルから|
+|ユーザーID|login_user_id|int||〇|〇|userテーブルから|
 |パスワード|login_pass|varchar(30)||〇|||
 |作成日時|login_created|date||〇|||
 |更新日時|login_update|date||〇||| 
@@ -43,7 +43,7 @@ history
 |:---|:---|:---|:---:|:---:|:---:|:---|
 |ユーザーID|history_user_id|int|〇|〇|〇||
 |作成日時|history_created|date|〇|〇|||
-|タイプ名|history_type_name|int||〇||こちらにも保存する|
+|タイプ名|history_type_name|varchar(25)||〇||こちらにも保存する|
 |テーマ名|history_theme|varchar(25)||〇|||
 |特徴|history_feature|text||||\*などで区切る|
 |テーマワード|history_idea|text||||\*などで区切る|
