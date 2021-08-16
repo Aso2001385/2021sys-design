@@ -31,7 +31,7 @@ user
 login
 |和名|属性名|型|PK|NN|FK|備考|
 |:---|:---|:---|:---:|:---:|:---:|:---|
-|ログインID|login_id|varchar(30)|〇|〇||ユニーク、デフォはメアド|
+|ログインID|login_id|varchar(30)|〇|〇|||
 |ユーザーID|login_user_id|int||〇|〇|userテーブルから|
 |パスワード|login_pass|varchar(30)||〇|||
 |作成日時|login_created|date||〇|||
