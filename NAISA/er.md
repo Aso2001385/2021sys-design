@@ -66,5 +66,5 @@ skinparam class {
   users ||-l-o{ skills
   users ||-r-o{ careers
   skills ||-d-o{ careers
-  clients ||-d-o{ matter
+  clients ||-d-o{ matters
   
